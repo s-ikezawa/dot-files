@@ -21,3 +21,9 @@ if command -v brew >/dev/null 2>&1; then
 fi
 autoload -Uz compinit
 compinit -u -d $XDG_DATA_HOME/zsh/compdump
+
+#=========================================================================
+# Starship
+# https://starship.rs/ja-JP/guide/
+#=========================================================================
+eval "$(starship init zsh)"
