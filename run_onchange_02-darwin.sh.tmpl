@@ -5,9 +5,12 @@
 brew bundle --no-lock --file=/dev/stdin << Brewfile
 
 brew "chezmoi"
+brew 'mas'
 
 cask "1password"
 cask "1password-cli"
+
+mas  "Xcode", id: 497799835
 
 Brewfile
 
