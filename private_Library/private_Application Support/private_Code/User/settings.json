@@ -24,5 +24,22 @@
   //=========================================================================
   // Editor
   //=========================================================================
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+
+  //=========================================================================
+  // VSCodeNeovim
+  //========================================================================= 
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape",
+      "args": []
+    },
+    "jk": {
+      "command": "vscode-neovim.lua",
+      "args": ["vim.api.nvim_input('<ESC>')\nrequire('vscode-neovim').action('workbench.action.files.save')"]
+    }
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
