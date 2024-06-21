@@ -3,6 +3,7 @@
   // Font
   //=========================================================================
   "editor.fontFamily": "UDEV Gothic 35NF",
+  "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "terminal.integrated.fontSize": 15,
 
