@@ -1,18 +1,27 @@
 {
-    // Font
-    "editor.fontFamily": "UDEV Gothic 35NF",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 15,
+  //=========================================================================
+  // Font
+  //=========================================================================
+  "editor.fontFamily": "UDEV Gothic 35NF",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
 
-    // Theme
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "workbench.iconTheme": "vscode-icons",
+  //=========================================================================
+  // Theme
+  //=========================================================================
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "vscode-icons",
 
-    // Catppuccin recomended
-    "editor.semanticHighlighting.enabled": true,
-    "terminal.integrated.minimumContrastRatio": 1,
-    "window.titleBarStyle": "custom",
-    "gopls": {
-      "ui.semanticTokens": true,
-    },
+  // Catppuccin recomended
+  "editor.semanticHighlighting.enabled": true,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "window.titleBarStyle": "custom",
+  "gopls": {
+    "ui.semanticTokens": true,
+  },
+
+  //=========================================================================
+  // Editor
+  //=========================================================================
+  "editor.minimap.enabled": false
 }
