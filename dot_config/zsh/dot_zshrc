@@ -1,4 +1,13 @@
 #=========================================================================
+# Alias
+#=========================================================================
+alias ls="eza --color=always --icons=always"
+alias lsa="eza -a --color=always --icons=always"
+alias ll="eza -l --color=always --icons=always"
+alias lla="eza -al --color=always --icons=always"
+alias tree="eza -T --color=always"
+
+#=========================================================================
 # History
 #=========================================================================
 export HISTFILE=$XDG_DATA_HOME/zsh/history
