@@ -1,0 +1,24 @@
+#!/bin/bash
+
+{{ if eq .chezmoi.os "darwin" }}
+
+# XDGに必要なディレクトリの作成
+mkdir -p $HOME/.config $HOME/.cache $HOME/.local/share/zsh $HOME/.local/state
+
+# キーリピートの速度を上げる
+defaults write -g InitialKeyRepeat -int 11
+defaults write -g KeyRepeat -int 1
+
+# VSCodeでキーリピートが動作するようにする
+defaults write com.microsoft.VSCode ApplePressAndHbldEnabled -bool false
+
+# Intellij ideaVimでキーリピートが動作するようにする
+defaults write com.jetbrains.intellij.ce ApplePressAndHbldEnabled -bool false
+
+# Zshの設定ファイル配置をXDG配下に変更
+echo "export ZDOTDIR=$HOME/.config/zsh" | sudo tee /etc/zshenv
+
+# Homebrewのインストール
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+{{ end }}
