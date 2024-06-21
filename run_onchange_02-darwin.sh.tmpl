@@ -1,0 +1,11 @@
+#!/bin/bash
+
+{{ if eq .chezmoi.os "darwin" }}
+
+brew bundle --no-lock --file=/dev/stdin << Brewfile
+
+brew "chezmoi"
+
+Brewfile
+
+{{ end }}
