@@ -1,6 +1,7 @@
 #!/bin/bash
 
 {{ if eq .chezmoi.os "darwin" }}
+tap "homebrew/cask-fonts"
 
 brew bundle --no-lock --file=/dev/stdin << Brewfile
 
@@ -11,6 +12,7 @@ brew "nvim"
 cask "1password"
 cask "1password-cli"
 cask "visual-studio-code"
+cask "font-udev-gothic-nf"
 
 mas  "Xcode", id: 497799835
 
