@@ -10,10 +10,10 @@ defaults write -g InitialKeyRepeat -int 11
 defaults write -g KeyRepeat -int 1
 
 # VSCodeでキーリピートが動作するようにする
-defaults write com.microsoft.VSCode ApplePressAndHbldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Intellij ideaVimでキーリピートが動作するようにする
-defaults write com.jetbrains.intellij.ce ApplePressAndHbldEnabled -bool false
+defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false
 
 # Zshの設定ファイル配置をXDG配下に変更
 echo "export ZDOTDIR=$HOME/.config/zsh" | sudo tee /etc/zshenv
