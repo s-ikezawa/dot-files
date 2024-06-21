@@ -1,7 +1,6 @@
 #!/bin/bash
 
 {{ if eq .chezmoi.os "darwin" }}
-tap "homebrew/cask-fonts"
 
 brew bundle --no-lock --file=/dev/stdin << Brewfile
 
