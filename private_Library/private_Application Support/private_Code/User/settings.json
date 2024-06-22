@@ -42,5 +42,6 @@
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  }
+  },
+  "editor.tabSize": 2
 }
