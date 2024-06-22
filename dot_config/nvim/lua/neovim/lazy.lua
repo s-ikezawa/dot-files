@@ -18,5 +18,7 @@ require("lazy").setup({
   require("neovim.plugins.nvim-tree"),
   require("neovim.plugins.nvim-autopairs"),
   require("neovim.plugins.nvim-cmp"),
-  require("neovim.plugins.nvim-surround")
+  require("neovim.plugins.nvim-surround"),
+  require("neovim.plugins.lsp.mason"),
+  require("neovim.plugins.lsp.lspconfig"),
 })
