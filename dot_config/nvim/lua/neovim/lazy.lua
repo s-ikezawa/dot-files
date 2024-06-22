@@ -21,4 +21,5 @@ require("lazy").setup({
   require("neovim.plugins.nvim-surround"),
   require("neovim.plugins.lsp.mason"),
   require("neovim.plugins.lsp.lspconfig"),
+  require("neovim.plugins.telescope"),
 })
