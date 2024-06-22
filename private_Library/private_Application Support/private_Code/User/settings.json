@@ -26,6 +26,8 @@
   //=========================================================================
   "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
 
   //=========================================================================
   // VSCodeNeovim
@@ -43,5 +45,4 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "editor.tabSize": 2
 }
