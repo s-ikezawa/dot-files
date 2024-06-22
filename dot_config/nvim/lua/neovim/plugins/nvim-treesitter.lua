@@ -1,5 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  dependencies = {
+    "RRethy/nvim-treesitter-endwise",
+  },
   event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   config = function()
@@ -11,12 +14,8 @@ return {
       indent = {
         enable = true,
       },
-      ensure_installed = {
-        "lua",
-        "vim",
-        "vimdoc",
-        "markdown",
-        "markdown_inline"
+      endwise = { -- nvim-treesitter-endwise
+        enable = true,
       },
       incremental_selection = {
         enable = true,
@@ -26,7 +25,14 @@ return {
           scope_incremental = false,
           node_decremental = "<BS>",
         }
-      }
+      },
+      ensure_installed = {
+        "lua",
+        "vim",
+        "vimdoc",
+        "markdown",
+        "markdown_inline"
+      },
     })
   end
 }
