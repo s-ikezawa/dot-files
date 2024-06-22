@@ -28,8 +28,8 @@ return {
     mason_tool_installer.setup({
       ensure_installed = {
         "stylua", -- lua formatter
-        -- "biome",   -- javascript formatter
-        -- "prettier" -- javascript formatter
+        "biome", -- javascript formatter
+        "prettier", -- javascript formatter
       },
     })
   end,
