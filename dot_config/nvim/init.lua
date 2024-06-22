@@ -3,4 +3,5 @@ if vim.g.vscode then
 else
   require("neovim.lazy")
   require("neovim.options")
+  require("neovim.keymaps")
 end
