@@ -5,8 +5,7 @@ vim.opt.swapfile = false
 vim.opt.termguicolors = true
 vim.cmd.colorscheme("catppuccin")
 vim.opt.list = true
-vim.opt.listchars = { tab = "»-", trail = "-", extends = "»", precedes = "«", nbsp = "%" }
---vim.opt.listchars = { tab = "»-", trail = "-", eol = "↲", extends = "»", precedes = "«", nbsp = "%" }
+vim.opt.listchars = { tab = "»-", trail = "-", eol = "↲", extends = "»", precedes = "«", nbsp = "%" }
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
