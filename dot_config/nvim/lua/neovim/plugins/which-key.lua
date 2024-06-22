@@ -15,8 +15,9 @@ return {
       plugins = {
         presets = {
           operators = false,
-        }
-      }
+        },
+      },
     })
-  end
+  end,
 }
+

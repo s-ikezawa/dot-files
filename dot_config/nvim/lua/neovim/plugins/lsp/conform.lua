@@ -20,15 +20,15 @@ return {
         lsp_fallback = true,
         quiet = false,
         async = false,
-      }
+      },
     })
 
-    vim.keymap.set({"n", "v"}, "<leader>mp", function()
+    vim.keymap.set({ "n", "v" }, "<leader>mp", function()
       conform.format({
         lsp_fallback = true,
         async = false,
         timeout_ms = 2000,
       })
     end, { desc = "format file or range" })
-  end
+  end,
 }

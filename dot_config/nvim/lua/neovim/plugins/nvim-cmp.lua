@@ -7,7 +7,7 @@ return {
     {
       "L3MON4D3/LuaSnip",
       version = "v2.*",
-      build = "make install_jsregexp"
+      build = "make install_jsregexp",
     },
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
@@ -22,7 +22,7 @@ return {
 
     cmp.setup({
       completion = {
-        completeopt = "menu,menuone,preview,noselect"
+        completeopt = "menu,menuone,preview,noselect",
       },
       snippet = {
         expand = function(args)
@@ -48,7 +48,7 @@ return {
           maxwidth = 50,
           ellipsis_char = "...",
         }),
-      }
+      },
     })
-  end
+  end,
 }

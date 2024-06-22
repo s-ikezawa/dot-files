@@ -24,15 +24,15 @@ return {
           node_incremental = "<C-space>",
           scope_incremental = false,
           node_decremental = "<BS>",
-        }
+        },
       },
       ensure_installed = {
         "lua",
         "vim",
         "vimdoc",
         "markdown",
-        "markdown_inline"
+        "markdown_inline",
       },
     })
-  end
+  end,
 }
