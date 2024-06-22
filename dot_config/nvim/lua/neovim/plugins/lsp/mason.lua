@@ -27,6 +27,7 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
+        "luacheck", -- lua linter
         "stylua", -- lua formatter
         "biome", -- javascript formatter
         "prettier", -- javascript formatter
