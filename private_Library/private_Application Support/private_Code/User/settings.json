@@ -17,9 +17,6 @@
   "editor.semanticHighlighting.enabled": true,
   "terminal.integrated.minimumContrastRatio": 1,
   "window.titleBarStyle": "custom",
-  "gopls": {
-    "ui.semanticTokens": true,
-  },
 
   //=========================================================================
   // Editor
@@ -29,6 +26,13 @@
   "editor.tabSize": 2,
   "editor.renderWhitespace": "boundary",
 
+  //=========================================================================
+  // Golang
+  //=========================================================================
+  "gopls": {
+    "ui.semanticTokens": true,
+    "ui.completion.usePlaceholders": true,
+  },
   //=========================================================================
   // VSCodeNeovim
   //========================================================================= 

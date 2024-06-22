@@ -32,6 +32,11 @@ return {
         "vimdoc",
         "markdown",
         "markdown_inline",
+        "go",
+        "gomod",
+        "gosum",
+        "gotmpl",
+        "gowork",
       },
     })
   end,

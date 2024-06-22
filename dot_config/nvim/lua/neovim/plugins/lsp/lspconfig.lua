@@ -7,21 +7,20 @@ return {
       "antosha417/nvim-lsp-file-operations",
       dependencies = {
         "nvim-lua/plenary.nvim",
-        "nvim-tree/nvim-tree.lua"
+        "nvim-tree/nvim-tree.lua",
       },
       config = true,
     },
     {
       "folke/neodev.nvim",
       opts = {},
-    }
+    },
   },
   config = function()
     local lspconfig = require("lspconfig")
     local mason_lspconfig = require("mason-lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
     local keymap = vim.keymap
-
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
       callback = function(ev)
@@ -65,7 +64,7 @@ return {
 
         opts.desc = "Restart LSP"
         keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
-      end
+      end,
     })
 
     local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -80,6 +79,20 @@ return {
       function(server_name)
         lspconfig[server_name].setup({
           capabilities = capabilities,
+        })
+      end,
+      ["gopls"] = function()
+        lspconfig["gopls"].setup({
+          capabilities = capabilities,
+          settings = {
+            gopls = {
+              analyses = {
+                unusedparams = true,
+              },
+              completeUnimported = true,
+              usePlaceholders = true,
+            },
+          },
         })
       end,
       ["lua_ls"] = function()
@@ -100,5 +113,5 @@ return {
         })
       end,
     })
-  end
+  end,
 }

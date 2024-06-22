@@ -22,6 +22,7 @@ return {
     mason_lspconfig.setup({
       ensure_installed = {
         "lua_ls",
+        "gopls",
       },
     })
 
@@ -31,6 +32,8 @@ return {
         "stylua", -- lua formatter
         "biome", -- javascript formatter
         "prettier", -- javascript formatter
+        "gofumpt", -- golang formatter
+        "goimports", -- golang remove unused import
       },
     })
   end,
