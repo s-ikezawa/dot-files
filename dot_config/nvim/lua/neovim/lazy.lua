@@ -12,5 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  require("neovim.plugins.catppuccin")
+  require("neovim.plugins.catppuccin"),
+  require("neovim.plugins.nvim-treesitter"),
+  require("neovim.plugins.which-key"),
 })
