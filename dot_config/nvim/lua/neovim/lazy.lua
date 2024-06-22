@@ -17,4 +17,5 @@ require("lazy").setup({
   require("neovim.plugins.which-key"),
   require("neovim.plugins.nvim-tree"),
   require("neovim.plugins.nvim-autopairs"),
+  require("neovim.plugins.nvim-cmp"),
 })
