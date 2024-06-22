@@ -15,5 +15,6 @@ require("lazy").setup({
   require("neovim.plugins.catppuccin"),
   require("neovim.plugins.nvim-treesitter"),
   require("neovim.plugins.which-key"),
-  require("neovim.plugins.nvim-tree")
+  require("neovim.plugins.nvim-tree"),
+  require("neovim.plugins.nvim-autopairs"),
 })
